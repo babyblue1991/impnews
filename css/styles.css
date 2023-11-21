@@ -1,0 +1,164 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  
+  /* Simple smooth transition for hover effects */
+  a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #6200ea;
+  }
+  
+  /* Style for the header */
+  header {
+    background-color: #6200ea;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1,
+  header h2 {
+    margin-bottom: 10px;
+  }
+  
+  header a {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Navigation styles */
+  nav#mainMenu ul {
+    list-style-type: none;
+    text-align: center;
+    background: #270fae;
+    padding: 10px;
+  }
+  
+  nav#mainMenu li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav#mainMenu a {
+    padding: 10px 15px;
+    background-color: #b2cc4a;
+    border-radius: 4px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Style for the main content */
+  main {
+    padding: 20px;
+    display: flex; /* Enables flexbox */
+    flex-direction: column;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    align-items: center;
+    gap: 20px; /* Adds space between the articles */
+  }
+  
+  main h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1; /* Each article will grow to take up available space */
+    max-width: calc(50% - 20px); /* Sets the maximum width to half of the parent minus the gap */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Simple box shadow for a subtle depth effect */
+    margin-bottom: 20px; /* Margin bottom for spacing */
+  }
+  
+  article h2 {
+    color: #6200ea;
+    margin-bottom: 10px;
+  }
+  
+  article img {
+    max-width: 100%; /* Ensures the image is responsive and doesn't overflow its container */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 300px; /* Maximum height set for the images */
+    margin: 20px;
+}
+  
+  article p {
+    color: #666;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  
+  article a {
+    padding: 5px 10px;
+    background-color: #6200ea;
+    color: #ffffff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the "artikelDesTages" class */
+  .artikelDesTages {
+    background-color: #bab24a;
+  }
+  /*Style Formular*/
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
+  
+  /* Responsive typography */
+  body {
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  } 
+  
